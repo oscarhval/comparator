@@ -1,0 +1,132 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+label {
+  color: red;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 96%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+}
+
+input[type="submit"],
+button {
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#volver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: darkred;
+}
+
+footer {
+    width: 98%;
+    margin: 20px auto;
+    background-image: url(gif/banner.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+footer .logo {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+footer .logo a {
+    display: inline-block;
+}
+
+footer .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 600px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    form {
+        width: 50%;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    form {
+        width: 40%;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    footer .logo img {
+        width: 50px;
+        height: 50px;
+    }
+}
